@@ -8,7 +8,7 @@
 
     <title>{{ config('app.name') }} ― Canvas</title>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'], 'vendor/amsaid/canvas')
+    @vite(['resources/css/app.css', 'resources/js/app.js'], 'vendor/canvas')
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Karla&family=Caveat:wght@700&display=swap">
 

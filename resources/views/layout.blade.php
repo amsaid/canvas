@@ -13,7 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Karla&family=Merriweather:wght@400;700&display=swap">
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'], 'vendor/amsaid/canvas')
+    @vite(['resources/css/app.css', 'resources/js/app.js'], 'vendor/canvas')
 
     @if(\Canvas\Canvas::enabledDarkMode($jsVars['user']['dark_mode']))
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/sunburst.min.css">
