@@ -7,9 +7,9 @@ import settings from '../store/modules/settings';
 Vue.use(Router);
 
 NProgress.configure({
-    showSpinner: false,
-    easing: 'ease',
-    speed: 300,
+  showSpinner: false,
+  easing: 'ease',
+  speed: 300,
 });
 
 const router = createRouter();
@@ -17,16 +17,17 @@ const router = createRouter();
 export default router;
 
 function createRouter() {
-    const router = new Router({
-        base: settings.state.path,
-        mode: 'history',
-        routes,
-    });
+  const router = new Router({
+    base: settings.state.path,
+    mode: 'history',
+    routes,
+  });
 
-    router.beforeEach((to, from, next) => {
-        NProgress.start();
-        next();
-    });
+  router.beforeEach((to, from, next) => {
+    NProgress.start();
+    consolel.log(to, from);
+    next();
+  });
 
-    return router;
+  return router;
 }
