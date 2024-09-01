@@ -38,7 +38,7 @@ class CanvasServiceProvider extends PackageServiceProvider
             ->hasAssets()
             ->publishesServiceProvider('providers/CanvasServiceProvider')
             ->hasMigration('create_canvas_table')
-            ->hasCommand(CanvasCommand::class)
+            //->hasCommand(CanvasCommand::class)
             ->hasCommand(DigestCommand::class)
             //->hasCommand(InstallCommand::class)
             ->hasCommand(MigrateCommand::class)
@@ -50,6 +50,7 @@ class CanvasServiceProvider extends PackageServiceProvider
                     ->publishConfigFile()
                     ->publishAssets()
                     ->publishMigrations()
+                    ->askToRunMigrations()
                     ->copyAndRegisterServiceProviderInApp()
                     ->endWith(function (InstallCommand $command) {
                         $email = 'email@example.com';
