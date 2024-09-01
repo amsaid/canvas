@@ -172,7 +172,7 @@ class User extends Authenticatable
      */
     public function getDefaultAvatarAttribute(): string
     {
-        return Canvas::avatar($this->nom ?? '');
+        return Canvas::avatar($this->name ?? '');
     }
 
     /**
