@@ -1,15 +1,4 @@
-<p align="center">
-    <a href="https://trycanvas.app">
-        <img src=".github/docs/header.png" alt="Homepage for trycanvas.app">
-    </a>
-</p>
 
-<p align="center">
-    <a href="https://github.com/amsaid/canvas/actions"><img src="https://github.com/amsaid/canvas/workflows/tests/badge.svg" alt="Build Status"></a>
-    <a href="https://packagist.org/packages/amsaid/canvas"><img src="https://img.shields.io/packagist/dt/amsaid/canvas" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/amsaid/canvas"><img src="https://img.shields.io/packagist/v/amsaid/canvas" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/amsaid/canvas"><img src="https://img.shields.io/packagist/l/amsaid/canvas" alt="License"></a>
-</p>
 
 ## Introduction
 
