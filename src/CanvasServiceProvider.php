@@ -51,7 +51,7 @@ class CanvasServiceProvider extends PackageServiceProvider
                     ->publishAssets()
                     ->publishMigrations()
                     ->askToRunMigrations()
-                    ->copyAndRegisterServiceProviderInApp()
+                    //->copyAndRegisterServiceProviderInApp()
                     ->endWith(function (InstallCommand $command) {
                         $email = 'email@example.com';
                         $password = 'password';
