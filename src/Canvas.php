@@ -74,7 +74,7 @@ class Canvas
             return true;
         }
 
-        $path = public_path('vendor/canvas/mix-manifest.json');
+        $path = public_path('vendor/canvas/manifest.json');
 
         $message = sprintf(
             '%s%s.  %s',
@@ -87,7 +87,7 @@ class Canvas
             throw new RuntimeException($message);
         }
 
-        return File::get($path) === File::get(__DIR__ . '/../public/mix-manifest.json');
+        return File::get($path) === File::get(__DIR__ . '/../resources/dist/manifest.json');
     }
 
     /**
@@ -123,6 +123,22 @@ class Canvas
         }
 
         return null;
+    }
+
+    /**
+     * Generate an avatar for a given name.
+     *
+     * @param  string  $name
+     * @param  int  $size
+     * @param  string  $background
+     * @return string
+     */
+    public static function avatar(
+        string $name,
+        int $size = 200,
+        string $background = 'random',
+    ) {
+        return "https://ui-avatars.com/api/?name={$name}&size={$size}&background={$background}";
     }
 
     /**

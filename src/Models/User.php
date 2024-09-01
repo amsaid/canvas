@@ -73,7 +73,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password',
+        'remember_token',
     ];
 
     /**
@@ -171,7 +172,7 @@ class User extends Authenticatable
      */
     public function getDefaultAvatarAttribute(): string
     {
-        return Canvas::gravatar($this->email ?? '');
+        return Canvas::avatar($this->nom ?? '');
     }
 
     /**

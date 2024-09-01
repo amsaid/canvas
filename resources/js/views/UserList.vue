@@ -55,7 +55,7 @@
                                                 {{ getRoleName(user.role) }}
                                             </span>
                                         </div>
-                                        <img :src="user.avatar || gravatar(user.email)" style="width: 57px; height: 57px"
+                                        <img :src="user.avatar || avatar(user.name)" style="width: 57px; height: 57px"
                                             class="mr-2 ml-3 shadow-inner rounded-circle" :alt="user.name" />
                                     </div>
 
