@@ -25,7 +25,7 @@ function createRouter() {
 
   router.beforeEach((to, from, next) => {
     NProgress.start();
-    consolel.log(to, from);
+    console.log(to, from);
     next();
   });
 
