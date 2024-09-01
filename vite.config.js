@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue2';
 export default defineConfig({
   plugins: [
     laravel({
-      buildDirectory: 'vendor/amsaid/canvas',
+      buildDirectory: 'vendor/canvas',
       input: [
         'resources/sass/app.scss',
         'resources/js/app.js',
