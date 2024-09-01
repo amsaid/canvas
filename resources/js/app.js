@@ -4,6 +4,7 @@ import Vue from 'vue';
 import moment from 'moment';
 import request from './mixins/request';
 import router from './router';
+import App from './App.vue';
 
 import 'bootstrap';
 import Popper from 'popper.js';
@@ -26,4 +27,5 @@ new Vue({
   el: '#canvas',
   router,
   store,
+  render: (h) => h(App),
 });

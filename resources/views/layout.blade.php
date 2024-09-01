@@ -35,9 +35,7 @@
     </div>
     @endif
 
-    <div id="canvas">
-        <router-view></router-view>
-    </div>
+    <div id="canvas"> </div>
 
     <script>
         window.Canvas = @json($jsVars);
