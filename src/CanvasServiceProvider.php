@@ -36,6 +36,7 @@ class CanvasServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasAssets()
+            ->hasTranslations()
             ->publishesServiceProvider('providers/CanvasServiceProvider')
             ->hasMigration('create_canvas_table')
             //->hasCommand(CanvasCommand::class)
