@@ -85,6 +85,7 @@ import EmbedImageModal from './EmbedImageModal.vue';
 import Parchment from 'parchment';
 import Quill from 'quill';
 import debounce from 'lodash/debounce';
+import headerSvg from 'quill/assets/icons/header-3.svg';
 
 export default {
     name: 'quill-editor',
@@ -138,7 +139,7 @@ export default {
             Quill.register(EmbedContentBlot, true);
 
             const icons = Quill.import('ui/icons');
-            icons.header[3] = require('!html-loader!quill/assets/icons/header-3.svg');
+            icons.header[3] = headerSvg;
 
             let quill = new Quill(this.$refs.editor, {
                 modules: {

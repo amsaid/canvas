@@ -101,6 +101,7 @@ import { mapGetters, mapState } from 'vuex';
 import Hover from '../directives/Hover';
 import NProgress from 'nprogress';
 import PageHeader from '../components/PageHeader.vue';
+import languages from '../data/languages.json';
 
 export default {
     name: 'edit-settings',
@@ -146,7 +147,7 @@ export default {
 
     methods: {
         getLocaleDisplayName(locale) {
-            let language = require('../data/languages.json')[locale];
+            let language = languages[locale];
 
             return language.nativeName;
         },

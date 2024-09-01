@@ -1,11 +1,18 @@
 {
+  "node_modules/quill/assets/icons/header-3.svg": {
+    "file": "assets/header-3-DuD_f6yF.svg",
+    "src": "node_modules/quill/assets/icons/header-3.svg"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-Br_B7Y_H.js",
+    "file": "assets/app-CN53Iouk.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
       "assets/app-XIujSM-4.css"
+    ],
+    "assets": [
+      "assets/header-3-DuD_f6yF.svg"
     ]
   },
   "resources/sass/app.scss": {

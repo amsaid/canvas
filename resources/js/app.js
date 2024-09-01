@@ -5,16 +5,17 @@ import moment from 'moment';
 import request from './mixins/request';
 import router from './router';
 
-require('bootstrap');
+import 'bootstrap';
+import Popper from 'popper.js';
 
-window.Popper = require('popper.js').default;
+window.Popper = Popper;
 
 Vue.prototype.moment = moment;
 
 Vue.use(Toasted, {
-    position: 'bottom-right',
-    theme: 'bubble',
-    duration: 2500,
+  position: 'bottom-right',
+  theme: 'bubble',
+  duration: 2500,
 });
 
 Vue.mixin(request);
@@ -22,7 +23,7 @@ Vue.mixin(request);
 Vue.config.productionTip = false;
 
 new Vue({
-    el: '#canvas',
-    router,
-    store,
+  el: '#canvas',
+  router,
+  store,
 });
