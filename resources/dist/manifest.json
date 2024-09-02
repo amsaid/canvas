@@ -1,18 +1,23 @@
 {
   "node_modules/quill/assets/icons/header-3.svg": {
-    "file": "assets/header-3-DuD_f6yF.svg",
-    "src": "node_modules/quill/assets/icons/header-3.svg"
+    "file": "assets/header-3-wSL_-0Ym.js",
+    "name": "header-3",
+    "src": "node_modules/quill/assets/icons/header-3.svg",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/header-3-DuD_f6yF.svg"
+    ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-C5AjTk5d.js",
+    "file": "assets/app-ZuZIxouY.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
+    "dynamicImports": [
+      "node_modules/quill/assets/icons/header-3.svg"
+    ],
     "css": [
       "assets/app-XIujSM-4.css"
-    ],
-    "assets": [
-      "assets/header-3-DuD_f6yF.svg"
     ]
   },
   "resources/sass/app.scss": {
