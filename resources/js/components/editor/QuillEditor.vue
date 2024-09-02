@@ -37,12 +37,7 @@
                             d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
                     </svg>
                 </button>
-                <button class="btn btn-circle border mr-2" type="button" @click="insertDiv">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 24 24" class="icon-dots-horizontal">
-                        <path class="fill-body-color" fill-rule="evenodd"
-                            d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-                    </svg>
-                </button>
+
             </div>
         </div>
 
@@ -70,12 +65,7 @@
                             d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
                     </svg>
                 </button>
-                <button class="btn border border-bottom-0 border-right-0 py-2" type="button" @click="insertDiv">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 24 24" class="icon-dots-horizontal">
-                        <path class="fill-body-color" fill-rule="evenodd"
-                            d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-                    </svg>
-                </button>
+
             </div>
         </nav>
 
