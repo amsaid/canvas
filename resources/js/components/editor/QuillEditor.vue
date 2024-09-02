@@ -37,6 +37,12 @@
                             d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
                     </svg>
                 </button>
+                <button class="btn btn-circle border mr-2" type="button" @click="insertDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 24 24" class="icon-dots-horizontal">
+                        <path class="fill-body-color" fill-rule="evenodd"
+                            d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -64,6 +70,12 @@
                             d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
                     </svg>
                 </button>
+                <button class="btn border border-bottom-0 border-right-0 py-2" type="button" @click="insertDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 24 24" class="icon-dots-horizontal">
+                        <path class="fill-body-color" fill-rule="evenodd"
+                            d="M5 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
+                    </svg>
+                </button>
             </div>
         </nav>
 
@@ -82,6 +94,7 @@ import EmbedContentBlot from './EmbedContentBlot';
 import EmbedContentModal from './EmbedContentModal.vue';
 import EmbedImageBlot from './EmbedImageBlot';
 import EmbedImageModal from './EmbedImageModal.vue';
+import DivBlot from './DivBlot';
 import Parchment from 'parchment';
 import Quill from 'quill';
 import debounce from 'lodash/debounce';
@@ -134,6 +147,7 @@ export default {
 
     methods: {
         createEditor() {
+            Quill.register(DivBlot, true);
             Quill.register(DividerBlot, true);
             Quill.register(EmbedImageBlot, true);
             Quill.register(EmbedContentBlot, true);
@@ -293,6 +307,13 @@ export default {
             let range = this.editor.getSelection(true);
             this.editor.insertText(range.index, '', Quill.sources.USER);
             this.editor.insertEmbed(range.index, 'divider', true, Quill.sources.USER);
+            this.editor.setSelection(range.index + 2, Quill.sources.SILENT);
+        },
+
+        insertDiv() {
+            let range = this.editor.getSelection(true);
+            this.editor.insertText(range.index, '', Quill.sources.USER);
+            this.editor.insertEmbed(range.index, 'div', true, Quill.sources.USER);
             this.editor.setSelection(range.index + 2, Quill.sources.SILENT);
         },
 
