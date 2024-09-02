@@ -142,7 +142,7 @@ export default {
             Quill.register(EmbedContentBlot, true);
 
             const icons = Quill.import('ui/icons');
-            icons.header[3] = await import('quill/assets/icons/header-3.svg');
+            //icons.header[3] = await import('quill/assets/icons/header-3.svg');
 
             let quill = new Quill(this.$refs.editor, {
                 modules: {
