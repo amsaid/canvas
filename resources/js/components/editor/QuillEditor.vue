@@ -135,14 +135,14 @@ export default {
     },
 
     methods: {
-        createEditor() {
+        async createEditor() {
             Quill.register(DivBlot, true);
             Quill.register(DividerBlot, true);
             Quill.register(EmbedImageBlot, true);
             Quill.register(EmbedContentBlot, true);
 
             const icons = Quill.import('ui/icons');
-            icons.header[3] = import('quill/assets/icons/header-3.svg');
+            icons.header[3] = await import('quill/assets/icons/header-3.svg');
 
             let quill = new Quill(this.$refs.editor, {
                 modules: {
